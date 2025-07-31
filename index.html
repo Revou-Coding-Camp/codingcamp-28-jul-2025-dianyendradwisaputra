@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Dian Yendra
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Our Profile</a></li>
+        <li><a href="#contact">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section id="home" class="banner">
+    <div class="overlay fade-in-up">
+      <h2>Hi <span id="user-name">Dian Yendra</span>, Welcome To Our Website</h2>
+      <p>Building the future with technology</p>
+      <a class="cta-btn" href="#contact">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <div class="content-wrapper">
+      <h2>About The Company</h2>
+      <p>We are an innovative company focused on delivering top-notch technology solutions worldwide.</p>
+      <h3>Vision &amp; Mission</h3>
+      <p><strong>Vision:</strong> Empower innovation globally.<br>
+         <strong>Mission:</strong> Deliver sustainable and impactful solutions.</p>
+    </div>
+  </section>
+
+  <!-- Profile -->
+  <section id="profile" class="team alt-bg">
+    <div class="content-wrapper">
+      <h2>Our Profile</h2>
+      <div class="team-container">
+        <div class="member card">
+          <img src="foto_dian.jpeg" />
+          <h4>Dian Yendra
+          <p>Frontend Engineer</p>
+        </div>
+        <div class="member card">
+          <img src="foto_dinda.jpg" />
+          <h4>Dinda
+          <p>UI/UX Designer</p>
+        </div>
+        <div class="member card">
+          <img src="foto_roy.jpg" />
+          <h4>Roy
+          <p>Backend Developer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="contact">
+    <div class="content-wrapper">
+      <h2>Message Us</h2>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name" class="sr-only">Your Name</label>
+          <input type="text" id="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <label for="email" class="sr-only">Your Email</label>
+          <input type="email" id="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone" class="sr-only">Your Phone Number</label>
+          <input type="text" id="phone" placeholder="Your Phone Number" required />
+        </div>
+        <div class="form-group full">
+          <label for="message" class="sr-only">Your Message</label>
+          <textarea id="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send</button>
+      </form>
+      <p id="form-response" role="alert" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MyCompany.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
